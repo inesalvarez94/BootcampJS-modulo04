@@ -8,6 +8,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 20px; /* Espacio vertical entre elementos */
 }
 
 .numero-turno {
@@ -22,3 +23,36 @@
   margin: 0;
   text-align: center;
 }
+
+.botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.botones-container button,
+.botones-container input[type="number"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.botones-container button {
+  background-color: #bfdeff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.botones-container button:hover {
+  background-color: #0056b3;
+}
+
+.botones-container input[type="number"] {
+  border: 1px solid #ccc;
+  width: 100px;
+  text-align: center;
+}
+
